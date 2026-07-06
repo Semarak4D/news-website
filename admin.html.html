@@ -96,7 +96,20 @@ td { padding:14px 20px; border-bottom:1px solid var(--border); font-size:13.5px;
 .spinner { width:24px; height:24px; border:3px solid var(--border); border-top-color:var(--accent); border-radius:50%; animation:spin .6s linear infinite; }
 @keyframes spin { to { transform:rotate(360deg); } }
 .preview-box { width:100%; height:200px; border:1px solid var(--border); border-radius:var(--radius); margin-top:16px; background-size:cover; background-position:center; background-color:var(--paper); }
-@media(max-width:900px) { .stat-grid { grid-template-columns:repeat(2,1fr); } .editor-grid { grid-template-columns:1fr; } .sidebar { width:200px; } }
+/* CARBON FIBER BLACK SHINY */
+.sidebar { 
+    background-color: #0a0a0a !important;
+    background-image: 
+        linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%, rgba(255,255,255,0.03)),
+        linear-gradient(45deg, rgba(255,255,255,0.03) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.03) 75%, rgba(255,255,255,0.03)) !important;
+    background-size: 10px 10px !important;
+    background-position: 0 0, 5px 5px !important;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.8) !important;
+}
+.content-area { background-color: #eae8e2 !important; }
+.topbar { background-color: #f0ede6 !important; }
+.card, .stat-card { background-color: #f5f3ec !important; }
+  @media(max-width:900px) { .stat-grid { grid-template-columns:repeat(2,1fr); } .editor-grid { grid-template-columns:1fr; } .sidebar { width:200px; } }
 @media(max-width:640px) { .sidebar { display:none; } .content-area { padding:20px; } .av-headline { font-size:28px; } }
 </style>
 </head>
